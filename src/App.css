@@ -1,0 +1,23 @@
+.search-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.selectElement {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 1em;
+}
+
+input {
+  width: 400px;
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 1em;
+}
