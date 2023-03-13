@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import {Grid} from '@mui/material';
 
 function App() {
   const [search, setSearch] = useState("");
@@ -21,9 +22,8 @@ function App() {
 
   const styles = {
     media: {
-      height: "40vh",
-      width:"47vh",
-      paddingTop: '5%', // 16:9,
+      width: "50%",
+      maxheight: "100px",
       marginTop:'30'
     }
 };
@@ -44,10 +44,10 @@ function App() {
         <option value="created">Created</option>
         <option value="updated">Updated</option>
       </select>
-      <ul>
+      <Grid container spacing={1} className='list'>
         {repos && repos.map((repo) => (
           
-            <Card sx={{ maxWidth: 345 }} variant='outlined'>
+            <Card sx={{ width: 345, height:400, margin:2 }} variant='outlined'>
               <CardMedia
                 component="img" 
                 image={repo.owner.avatar_url}
@@ -67,7 +67,7 @@ function App() {
             </Card>
           
         ))}
-      </ul>
+      </Grid>
     </div>
   );
 

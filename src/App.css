@@ -1,5 +1,4 @@
 .search-page {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -20,4 +19,18 @@ input {
   margin: 10px;
   font-size: 18px;
   border-radius: 1em;
+}
+
+.cardData{
+  display: flex;
+  margin: 5em;
+  height: 10em;
+  width: fit-content;
+  block-size: fit-content;
+}
+
+.list{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
